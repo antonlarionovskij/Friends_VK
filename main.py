@@ -57,6 +57,7 @@ def main():
     Делается так, чтобы не делать лишний запрос
     """
     friends_count = do_request_and_make_report(offset=0, page=1)
+    #print(friends_count)
 
     if MAX_COUNT < friends_count:
         for i in range(1, friends_count // MAX_COUNT + 1):
